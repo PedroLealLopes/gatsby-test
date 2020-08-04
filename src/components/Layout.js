@@ -1,16 +1,20 @@
 import React from 'react'
 import Navbar from './Navbar'
 import './layout.css'
+import { Helmet } from "react-helmet"
 
 const Layout = ({children}) => {
- return (
+return (
   <>
-   <Navbar />
-   <main>
+  <Helmet>
+    <title>Gatsby Test</title>
+  </Helmet>
+  <Navbar />
+  <main>
     {children}
-   </main>
+  </main>
   </>
- )
+)
 }
 
 export default Layout

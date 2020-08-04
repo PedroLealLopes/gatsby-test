@@ -17,7 +17,9 @@ module.exports = {
   plugins: [
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
-    `gatsby-plugin-styled-components`, "gatsby-plugin-breakpoints",
+    `gatsby-plugin-styled-components`, 
+    "gatsby-plugin-breakpoints",
+    `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -29,7 +31,7 @@ module.exports = {
       resolve: `gatsby-source-contentful`,
       options: {
         spaceId: `4xwvfy4xf533`,
-        accessToken: process.env.ACCESS_TOKEN,
+        accessToken: process.env,
       },
     },
   ],
